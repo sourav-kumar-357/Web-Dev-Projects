@@ -1,9 +1,5 @@
 'use strict';
 
-//--------------------------------------------------------------------------------------------------------------------------------------------------//
-
-// COMPLETE PROGRAM 
-
 const account1 = {
   owner: 'Jonas Schmedtmann',
   movements: [200, 450, -400, 3000, -650, -130, 70, 1300],
@@ -65,7 +61,6 @@ const inputCloseUsername = document.querySelector('.form__input--user');
 const inputClosePin = document.querySelector('.form__input--pin');
 
 // Functions
-
 const displayMovements = function (movements, sort = false) {
   containerMovements.innerHTML = '';
 
@@ -136,7 +131,6 @@ const updateUI = function (acc) {
   calcDisplaySummary(acc);
 };
 
-///////////////////////////////////////
 // Event handlers
 let currentAccount;
 
@@ -232,5 +226,3 @@ btnSort.addEventListener('click', function (e) {
   displayMovements(currentAccount.movements, !sorted);
   sorted = !sorted;
 });
-
-//-----------------------------------------------------------------------------------------------------//
