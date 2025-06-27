@@ -142,3 +142,70 @@ header {
   text-align: end;
   padding: 15px;
 }
+
+.scroll_to_top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  background-color: #282c3f;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 999;
+}
+
+#themeToggle {
+  margin-left: 20px;
+  padding: 5px 10px;
+  background-color: #f54e77;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.search_suggestions {
+  position: absolute;
+  top: 60px;
+  left: 60%;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  z-index: 100;
+  width: 250px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.search_suggestions p {
+  margin: 5px 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Dark mode support */
+body.dark {
+  background-color: #121212;
+  color: #eee;
+}
+
+body.dark header {
+  background-color: #1e1e1e;
+}
+
+body.dark .nav_bar a {
+  color: #eee;
+}
+
+body.dark .search_suggestions {
+  background-color: #1e1e1e;
+  color: white;
+}
